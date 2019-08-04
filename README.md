@@ -1,68 +1,67 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">Welcome to adva-re-start 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+</p>
 
-## Available Scripts
+> React + Redux
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- [Redux](https://redux.js.org/) store
+- [Storybook](https://storybook.js.org/)
+- [API request proxying](#proxying)
+- Based on [Create React App](https://github.com/facebook/create-react-app)
+- [File templates + generator script](#generator)
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Usage
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+```bash
+# Clone the boilerplate
+git clone https://github.com/DEVICARUS/adva-re-start.git
 
-### `npm test`
+# Install dependencies
+yarn
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Start development server
+yarn start
+```
 
-### `npm run build`
+## Basic Commands
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Command              | Description                                 |
+|:-------------------- | ------------------------------------------- |
+| `yarn start`         | Starts development server                   |
+| `yarn build`         | Builds the app in the `build` directory     |
+| `yarn run storybook` | Runs [Storybook](https://storybook.js.org/) |
+| `yarn run generator` | Runs [file generator script](#generator)    |
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Docs
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Generator
 
-### `npm run eject`
+The generator is a simple script for creating new components (and other things) using the templates from the `templates` directory. Simply run `yarn run generator` to start using it.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**Currently supports**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- React Components
 
-## Learn More
+- React-Redux Containers
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Redux Reducers
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Redux Actions
 
-### Code Splitting
+### Proxying
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+API requests 'just work'. On the development server, `/api` is being forwarded to the `5000` port. This assumes your API dev server runs on this port and your production server serves the API and React both on the same port.
 
-### Analyzing the Bundle Size
+## Author
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+👤 **DEVICARUS**
 
-### Making a Progressive Web App
+* Twitter: [@RevionReaper](https://twitter.com/RevionReaper)
+* Github: [@DEVICARUS](https://github.com/DEVICARUS)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+*Based on output of the [create-react-app](https://github.com/facebook/create-react-app)*

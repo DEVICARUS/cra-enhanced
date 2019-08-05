@@ -1,9 +1,9 @@
-<h1 align="center">Welcome to adva-re-start 👋</h1>
+<h1 align="center">Welcome to cra-enhanced 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
 </p>
 
-> React + Redux
+> Advanced React Starter
 
 ## Features
 
@@ -17,7 +17,7 @@
 
 ```bash
 # Clone the boilerplate
-git clone https://github.com/DEVICARUS/adva-re-start.git
+git clone https://github.com/DEVICARUS/cra-enhanced.git
 
 # Install dependencies
 yarn

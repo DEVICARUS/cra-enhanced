@@ -4,17 +4,17 @@ import { bindActionCreators } from 'redux';
 
 import './App.css';
 
-import { loadUsers } from '../store/actions/userActions'
+import Users from '../containers/Users'
+
+//import { loadUsers } from '../store/actions/userActions'
 
 export class App extends React.Component {
-  componentDidMount() {
-    this.props.loadUsers()
-  }
-
   render() {
     return (
       <div>
-        {this.props.user.list.length}
+        <b>Names of users:</b>
+        <Users />
+        <i>Loaded from <a href="/api/users/list">/api/users/list</a></i>
       </div>
     )
   }
@@ -22,12 +22,14 @@ export class App extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    user: state.userReducer
+    // user: state.userReducer
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
-  return bindActionCreators({ loadUsers }, dispatch)
+  return bindActionCreators({ 
+    // loadUsers 
+  }, dispatch)
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

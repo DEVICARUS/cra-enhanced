@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux';
 
 // import { myAction } from '../store/actions/myActionsFile';
 
-class NAME extends React.Component {
+class capNAME extends React.Component {
   render() {
     return (
       <div>
@@ -26,4 +26,4 @@ const mapDispatchToProps = (dispatch) => {
   }, dispatch) 
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(NAME);
+export default connect(mapStateToProps, mapDispatchToProps)(capNAME);

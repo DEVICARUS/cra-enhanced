@@ -1,4 +1,4 @@
 {
     "dir": "src/store/reducers",
-    "type": "file"
+    "type": "spread"
 }

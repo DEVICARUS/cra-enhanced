@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-class NAME extends React.Component {
+class capNAME extends React.Component {
   render() {
     return(
       <div>
@@ -11,4 +11,4 @@ class NAME extends React.Component {
   }
 };
 
-export default NAME
+export default capNAME

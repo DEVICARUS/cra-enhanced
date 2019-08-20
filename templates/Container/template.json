@@ -1,4 +1,4 @@
 {
     "dir": "src/containers",
-    "type": "file"
+    "type": "spread"
 }

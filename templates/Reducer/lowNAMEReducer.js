@@ -1,4 +1,4 @@
-const NAMEReducer = (state = {
+const lowNAMEReducer = (state = {
     data: null
 }, action) => {
     switch (action.type) {
@@ -15,4 +15,4 @@ const NAMEReducer = (state = {
     return state;
 };
 
-export default NAMEReducer;
+export default lowNAMEReducer;

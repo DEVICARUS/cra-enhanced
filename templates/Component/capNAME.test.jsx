@@ -1,14 +1,14 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import NAME from './NAME'
+import capNAME from './capNAME'
 
-describe('NAME', () => {
+describe('capNAME', () => {
   let component, props
 
   beforeEach(() => {
     props = {}
-    component = shallow(<NAME {...props} />)
+    component = shallow(<capNAME {...props} />)
   })
 
   it('should', () => {
